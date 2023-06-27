@@ -1,0 +1,68 @@
+1. VM 로그인 및 관리자 계정 전환 
+
+bigdata 로그인
+$ sudo su 관리자 접속
+
+2. 호스트 정보 수정 
+# vi /etc/hosts
+
+i - 코드입력
+esc - 입력 취소
+:wq - 저장후 종료
+
+3. 오라클 설치를 위한 필수 패키지 설치 
+# yum install -y bc flex libaio wget unzip
+
+4. 오라클 설치를 위한 계정 생성 
+# groupadd oinstall 
+# groupadd dba 
+# useradd -g oinstall -G dba oracle 
+# passwd oracle
+
+암호는 oracleoracle로 설정
+
+5. 오라클 설치파일 압축해제하기 
+# 
+# cd /home/bigdata/
+# ls
+# unzip oracle-xe-11.2.0-1.0.x86_64.rpm.zip
+
+6. 오라클 데이터베이스 설치하기 
+# cd Disk1
+# rpm -ivh oracle-xe-11.2.0-1.0.x86_64.rpm
+
+7. 오라클 데이터베이스 기본설정하기 
+# /etc/init.d/oracle-xe configure
+
+9999
+그냥엔터
+암호입력 (Bigdata_2022)
+암호입력 (Bigdata_2022)
+그냥엔터
+
+8. 방화벽해제
+systemctl stop firewalld
+systemctl disable firewalld
+
+9. oracle 환경 설정
+
+# vi /etc/profile
+
+페이지 맨 밑으로 이동
+
+export ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe
+export ORACLE_SID=XE
+export PATH=$ORACLE_HOME/bin:$PATH
+
+# source /etc/profile
+ 
+ 
+ 10.sqlplus 접속후 HR 예제 테이블 생성
+
+# su oracle
+
+$ source /etc/profile
+
+$ sqlplus /nolog
+
+conn sys as sysdba
