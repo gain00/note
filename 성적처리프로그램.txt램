@@ -1,0 +1,13 @@
+성적처리 프로그램
+이름,국어,영어,수학,총점,평균,학점(수우미양가)
+name kor eng mat tot acg grd
+
+SungJuk
+sungjuk.html
+sungjuk.js
+
+SungJukController
+SungJukService
+SungJukServiceImpl
+SungJukDAO
+SungJukDAOImpl

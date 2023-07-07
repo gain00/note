@@ -1,0 +1,39 @@
+css만들때
+
+세로로 몇줄인지 확인하고 가로로몇줄인지확인
+col 세로로 row 가로로
+
+name은 겹쳐도되지만 id는 겹치면안됨
+
+js에서 하나하나 가져오려면 id로 가져오고 여러개 한번에 가져오려면 name으로
+
+@PostMapping("/checkme")
+    public String checkmeok(String ~, String ~, String ~){
+        logger.info("checkmeok 호출");
+        return "join/checkmeok";
+    }
+
+@PostMapping("/checkme")
+    public String checkmeok(Checkme checkme, HttpSession session){
+        logger.info("checkmeok 호출");
+		return "join/checkmeok";
+    }
+매개변수 가져올때 하나하나 가져오는방식 보단 효율적이게 모델에 담아서 한번에 가져오기
+
+spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+spring.datasource.url= jdbc:mariadb://bigdatadb.cfju2jzbyg4y.ap-northeast-2.rds.amazonaws.com:3306/bigdata
+spring.datasource.username= admin
+spring.datasource.password= Bigdata_2023Bigdata_2023
+
+테이블 만들때 상급자 방식알아보고
+
+코렌토 17 
+
+버전13
+
+마이바티스를 쓰는 3가지
+
+인터페이스 설정해서
+xml파일안에다 아이디값설정해서
+
+

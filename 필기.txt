@@ -1,0 +1,63 @@
+스프링
+https://url.kr/53wdf6
+
+UML
+https://url.kr/hq4xfd
+
+모델링
+https://url.kr/jacylb
+
+aws
+https://url.kr/gdcbtf
+
+aws ec2
+https://url.kr/95kcfh
+
+aws rds
+https://url.kr/szieqd
+
+jstl
+https://url.kr/kx6yha
+
+boot
+https://url.kr/w91ank
+
+
+꿀뷰
+
+entity reference
+
+reset css
+
+normalize
+
+eric meyer
+
+getbootstrap.com
+
+
+
+abc123
+987xyz
+abc123
+abc123@987xyz.co.kr
+
+
+onreadystatechange
+
+<!-- 한글처리 필터 등록 -->
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+

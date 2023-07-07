@@ -1,0 +1,14 @@
+부트스트랩 중요
+데이터 입력
+view ->model -> Controller -> service -> dao -> DB
+
+
+데이터 출력
+DB-> dao ->service -> model -> Controller ->view
+
+join.jsp	joinok	
+memberservice	memberdao 	jdbctemplate
+
+테이블 컬럼명 ,jsp name, 	
+
+				
